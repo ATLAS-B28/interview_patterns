@@ -24,25 +24,27 @@ public class BaseExample {
         }
 
         Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
+        //sorts the array based on start value of each interval
 
         List<int[]> merged = new ArrayList<>();
         int[] currInterval = intervals[0];
         merged.add(currInterval);
 
         for(int[] interval : intervals) {
-            int currEnd = currInterval[1];
-            int nextStart = interval[0];
-            int nextEnd = interval[1];
+            int currEnd = currInterval[1];//end value of current interval
+            int nextStart = interval[0];//start value of next interval
+            int nextEnd = interval[1];//end value of next interval
 
-            if(currEnd >= nextStart) {
-                currInterval[1] = Math.max(currEnd, nextEnd);
+            if(currEnd >= nextStart) {//if true that means they overlap
+                currInterval[1] = Math.max(currEnd, nextEnd);//the current end value
+                //is updated to the max of the two
             } else { //currEnd < nextStart
-                currInterval = interval;
-                merged.add(currInterval);
+                currInterval = interval;//then current is updated to next interval
+                merged.add(currInterval);//as no overlapping happens we add the next interval
             }
         }
 
-        return merged.toArray(new int[merged.size()][]);
+        return merged.toArray(new int[merged.size()][]);//2D array
     }
 
     public static int[][] insertInterval(int[][] intervals, int[] newInterval) {
@@ -51,17 +53,27 @@ public class BaseExample {
         int n = intervals.length;
 
         while(i < n && intervals[i][1] < newInterval[0]) {
+            //intervals[i][1] is the end value of the current interval
+            //and newInterval[0] start value of the new interval
+            //if current end value is less than new interval start value
+            //then it is not overlapping
             merged.add(intervals[i]);
             i++;
         }
 
         while(i < n && intervals[i][0] <= newInterval[1]) {
+            //intervals[i][0] is the start value of the current interval
+            //and newInterval[1] end value of the new interval
+            //if current start value is less than or equal to new interval end value
+            //then it is overlapping
             newInterval[0] = Math.min(intervals[i][0], newInterval[0]);
+            //update the new interval in the new interval's start value
             newInterval[1] = Math.max(intervals[i][1], newInterval[1]);
+            //update the new interval in the new interval's end value
             i++;
         }
 
-        merged.add(newInterval);
+        merged.add(newInterval);//add the new interval
 
         while(i < n) {
             merged.add(intervals[i]);
