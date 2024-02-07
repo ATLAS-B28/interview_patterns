@@ -6,7 +6,6 @@ class ListNode3 {
     ListNode3 next;
 
     ListNode3(int x) {
-        this.val = val;
         this.next = null;
     }
 }
