@@ -2,7 +2,7 @@ package SlidingWindow;
 //Problem Challenge 1 - Permutation in a String
 
 import java.util.Arrays;
-import java.util.HashMap;
+
 
 public class Q5 {
 
