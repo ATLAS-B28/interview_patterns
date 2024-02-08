@@ -23,7 +23,7 @@ public class Q3 {
         for(i = 0; i < nums.length; i++) {
             if(nums[i] != i + 1) {
                 System.out.println("At " + i + " nums[i] " + nums[i]);
-                System.out.println("Duplicate Number: " + (i + 1) + " index");
+                System.out.println("Duplicate Number: " + nums[i] + " index");
                 duplicateNums.add(nums[i]);
             }
         }
