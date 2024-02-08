@@ -3212,3 +3212,47 @@ Feb 08, 2024 10:29:48 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancella
 WARNING: Unmatched cancel notification for request id 9324
 2024.02.08 10:30:01 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\FastSlowPointer\Q4.scala
 2024.02.08 10:30:04 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\FastSlowPointer\Q4.scala
+2024.02.08 10:33:21 INFO  Shutting down server
+2024.02.08 10:33:21 INFO  shutting down Metals
+2024.02.08 10:33:21 INFO  Shut down connection with build server.
+Feb 08, 2024 10:33:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+INFO: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.nio.channels.ClosedChannelException
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:126)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.sendCancelNotification(RemoteEndpoint.java:180)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint$1.cancel(RemoteEndpoint.java:150)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$2(BuildServerConnection.scala:425)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.scala:17)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$1(BuildServerConnection.scala:425)
+	at scala.meta.internal.metals.Cancelable$$anon$1.cancel(Cancelable.scala:18)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:29)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:28)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:25)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:365)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:157)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:149)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpenAndConnected(SocketChannelImpl.java:215)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:527)
+	at java.base/sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:123)
+	at java.base/java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.base/java.nio.channels.Channels.writeFully(Channels.java:93)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:171)
+	at java.base/java.io.OutputStream.write(OutputStream.java:127)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:151)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:137)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:108)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 20 more
+
+2024.02.08 10:33:21 INFO  Failed to run request with params InverseSourcesResult
+2024.02.08 10:33:21 INFO  Exiting server
