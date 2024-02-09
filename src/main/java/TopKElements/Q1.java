@@ -19,7 +19,7 @@ public class Q1 {
             //then we start from the kth element
             //and compare it with the top element of the min heap
             if(nums[i] > minHeap.peek()) {
-                //if current element in nums[i] is greater than
+                //if current element in nums[i] (which start form kth index) is greater than
                 //that at the top of the min heap
                 //remove it from the min heap
                 //and add the current element
