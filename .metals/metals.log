@@ -3256,3 +3256,344 @@ Caused by: java.nio.channels.ClosedChannelException
 
 2024.02.08 10:33:21 INFO  Failed to run request with params InverseSourcesResult
 2024.02.08 10:33:21 INFO  Exiting server
+2024.02.13 12:29:46 INFO  Started: Metals version 1.2.1 in folders 'C:\Users\abhij\Desktop\Interview_Pattern' for client Visual Studio Code 1.86.1.
+2024.02.13 12:29:48 INFO  Upgraded H2 database.
+12:29:48.726 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+12:29:48.728 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+12:29:48.729 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+12:29:48.732 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+12:29:48.732 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e ...
+12:29:48.732 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+12:29:48.732 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+12:29:48.732 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e ...
+12:29:48.733 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/abhij/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.1/metals_2.13-1.2.1.jar!/db/migration
+12:29:48.737 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+12:29:48.737 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+12:29:48.737 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+12:29:48.737 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+12:29:48.737 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+12:29:48.737 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+12:29:48.741 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:29:48.742 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+12:29:48.742 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+12:29:48.743 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+12:29:48.743 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+12:29:48.832 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:C:\Users\abhij\Desktop\Interview_Pattern\.metals\metals (H2 2.2)
+12:29:48.832 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+12:29:48.832 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+12:29:48.833 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+12:29:48.834 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+12:29:48.837 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+12:29:48.838 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+12:29:48.839 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:29:48.847 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+12:29:48.851 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:29:48.859 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+12:29:48.859 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+12:29:48.859 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+12:29:48.860 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:29:48.860 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+12:29:48.860 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+12:29:48.860 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+12:29:48.860 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+12:29:48.860 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:29:48.861 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+12:29:48.870 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.021s)
+12:29:48.871 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+12:29:48.878 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+12:29:48.881 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+12:29:48.891 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 56 of 100M
+2024.02.13 12:29:50 INFO  skipping build import with status 'Installed'
+2024.02.13 12:29:50 INFO  Attempting to connect to the build server...
+2024.02.13 12:29:50 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.5 defined at C:\Users\abhij\.bloop\bloop.json
+2024.02.13 12:29:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\abhij\Desktop\Interview_Pattern\.metals\bsp.trace.json or C:\Users\abhij\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.02.13 12:29:51 INFO  time: Connected to build server in 1.63s
+2024.02.13 12:29:51 INFO  Connected to Build server: Bloop v1.5.15
+2024.02.13 12:29:51 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\FastSlowPointer\Q4.scala
+2024.02.13 12:29:51 INFO  time: Imported build in 0.38s
+2024.02.13 12:30:05 INFO  no build target found for C:\Users\abhij\Desktop\Interview_Pattern\scala\FastSlowPointer\Q4.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.02.13 12:30:11 INFO  no build target found for C:\Users\abhij\Desktop\Interview_Pattern\scala\FastSlowPointer\Q4.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.02.13 12:30:11 INFO  time: indexed workspace in 6.06s
+2024.02.13 12:30:12 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\FastSlowPointer\Q4.scala
+2024.02.13 12:30:14 INFO  time: code lens generation in 2.38s
+2024.02.13 12:30:14 INFO  time: code lens generation in 2.38s
+2024.02.13 12:30:14 INFO  time: code lens generation in 2.38s
+2024.02.13 12:30:14 INFO  time: code lens generation in 2.13s
+2024.02.13 12:30:14 INFO  time: code lens generation in 2.38s
+2024.02.13 12:30:32 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\PairTargetSum.scala
+2024.02.13 12:30:33 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/PairTargetSum.scala
+2024.02.13 12:32:35 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/PairTargetSum.scala
+2024.02.13 12:32:35 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/PairTargetSum.scala
+Feb 13, 2024 12:32:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 35
+2024.02.13 12:32:36 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/PairTargetSum.scala
+Feb 13, 2024 12:33:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 194
+Feb 13, 2024 12:33:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 286
+Feb 13, 2024 12:33:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 309
+Feb 13, 2024 12:33:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 382
+Feb 13, 2024 12:33:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 482
+Feb 13, 2024 12:34:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 815
+2024.02.13 12:35:33 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\PairTargetSum.scala
+2024.02.13 12:36:17 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\PairTargetSum.scala
+2024.02.13 12:57:29 INFO  Shutting down server
+2024.02.13 12:57:29 INFO  shutting down Metals
+2024.02.13 12:57:29 INFO  Exiting server
+2024.02.14 17:51:28 INFO  Started: Metals version 1.2.1 in folders 'C:\Users\abhij\Desktop\Interview_Pattern' for client Visual Studio Code 1.86.1.
+17:51:29.869 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+17:51:29.874 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+17:51:29.874 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+17:51:29.879 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+17:51:29.879 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e ...
+17:51:29.879 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+17:51:29.879 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+17:51:29.879 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e ...
+17:51:29.880 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/abhij/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.1/metals_2.13-1.2.1.jar!/db/migration
+17:51:29.888 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+17:51:29.888 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+17:51:29.888 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+17:51:29.888 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+17:51:29.889 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+17:51:29.889 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+17:51:29.896 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+17:51:29.896 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+17:51:29.897 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+17:51:29.898 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+17:51:29.898 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+17:51:30.068 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:C:\Users\abhij\Desktop\Interview_Pattern\.metals\metals (H2 2.2)
+17:51:30.069 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+17:51:30.069 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+17:51:30.070 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+17:51:30.071 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+17:51:30.082 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+17:51:30.085 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+17:51:30.086 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+17:51:30.103 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+17:51:30.117 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+17:51:30.143 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+17:51:30.143 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+17:51:30.144 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+17:51:30.144 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+17:51:30.144 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+17:51:30.145 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+17:51:30.145 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+17:51:30.145 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+17:51:30.145 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+17:51:30.146 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+17:51:30.168 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.062s)
+17:51:30.171 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+17:51:30.182 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+17:51:30.191 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+17:51:30.204 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 35 of 100M
+2024.02.14 17:51:31 INFO  skipping build import with status 'Installed'
+2024.02.14 17:51:31 INFO  Attempting to connect to the build server...
+2024.02.14 17:51:31 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.5 defined at C:\Users\abhij\.bloop\bloop.json
+2024.02.14 17:51:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\abhij\Desktop\Interview_Pattern\.metals\bsp.trace.json or C:\Users\abhij\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.02.14 17:51:50 INFO  time: Connected to build server in 19s
+2024.02.14 17:51:50 INFO  Connected to Build server: Bloop v1.5.15
+2024.02.14 17:51:50 INFO  time: Imported build in 0.47s
+Feb 14, 2024 5:51:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+2024.02.14 17:52:06 INFO  no build target found for C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\PairTargetSum.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.02.14 17:52:10 INFO  time: indexed workspace in 3.56s
+2024.02.14 17:52:10 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\PairTargetSum.scala
+2024.02.14 17:52:20 INFO  no build target found for C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\PairTargetSum.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.02.14 17:52:25 INFO  time: code lens generation in 11s
+2024.02.14 17:52:25 INFO  time: code lens generation in 11s
+2024.02.14 17:52:25 INFO  time: code lens generation in 11s
+2024.02.14 17:52:25 INFO  time: code lens generation in 4.94s
+2024.02.14 17:52:25 INFO  time: code lens generation in 3.05s
+2024.02.14 17:52:25 INFO  time: code lens generation in 9.74s
+2024.02.14 17:52:25 INFO  time: code lens generation in 11s
+2024.02.14 17:52:25 INFO  time: code lens generation in 11s
+2024.02.14 17:52:25 INFO  time: code lens generation in 11s
+2024.02.14 17:52:25 INFO  time: code lens generation in 10s
+2024.02.14 17:52:25 INFO  time: code lens generation in 1.16s
+Feb 14, 2024 5:52:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 98
+Feb 14, 2024 5:52:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 102
+Feb 14, 2024 5:52:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 103
+2024.02.14 17:52:37 INFO  time: code lens generation in 1.08s
+Feb 14, 2024 5:52:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 155
+Feb 14, 2024 5:53:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 444
+Feb 14, 2024 5:53:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 466
+Feb 14, 2024 5:53:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 613
+Feb 14, 2024 5:54:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 838
+Feb 14, 2024 5:54:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 987
+Feb 14, 2024 5:55:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1003
+2024.02.14 17:55:16 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\PairTargetSum.scala
+2024.02.14 17:56:03 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\PairTargetSum.scala
+2024.02.14 17:59:12 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\PairTargetSum.scala
+2024.02.14 17:59:53 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\PairTargetSum.scala
+2024.02.14 18:00:09 ERROR Failed to tokenize input for semantic tokens for C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\PairTargetSum.scala
+scala.meta.tokenizers.TokenizeException: <input>:11: error: unclosed string literal
+    print("Sorted using QuickSort: "+nums+"\")
+                                          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.02.14 18:00:42 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\PairTargetSum.scala
+Feb 14, 2024 6:00:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1481
+2024.02.14 18:01:03 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\PairTargetSum.scala
+2024.02.14 18:01:05 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\PairTargetSum.scala
+2024.02.14 18:02:27 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\TripletSumtoZero.scala
+2024.02.14 18:02:27 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/TripletSumtoZero.scala
+2024.02.14 18:02:32 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/TripletSumtoZero.scala
+2024.02.14 18:02:34 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/TripletSumtoZero.scala
+2024.02.14 18:02:35 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/TripletSumtoZero.scala
+2024.02.14 18:02:36 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/TripletSumtoZero.scala
+2024.02.14 18:02:37 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/TripletSumtoZero.scala
+2024.02.14 18:02:38 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/TripletSumtoZero.scala
+2024.02.14 18:02:38 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/TripletSumtoZero.scala
+Feb 14, 2024 6:02:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1555
+Feb 14, 2024 6:02:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1575
+Feb 14, 2024 6:03:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2032
+Feb 14, 2024 6:03:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2060
+Feb 14, 2024 6:04:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2176
+Feb 14, 2024 6:05:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2455
+Feb 14, 2024 6:06:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2834
+Feb 14, 2024 6:06:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2853
+Feb 14, 2024 6:06:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3076
+Feb 14, 2024 6:06:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-14\r_compiler-error_18-06-55-442.md
+Feb 14, 2024 6:06:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3171
+Feb 14, 2024 6:07:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3197
+2024.02.14 18:07:29 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\TripletSumtoZero.scala
+2024.02.14 18:07:42 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\TripletSumtoZero.scala
+2024.02.14 18:09:24 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\TripletSumtoZero.scala
+2024.02.14 18:10:10 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/TripletSumtoZero.scala
+2024.02.14 18:10:11 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/TripletSumtoZero.scala
+2024.02.14 18:10:12 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/TripletSumtoZero.scala
+2024.02.14 18:10:12 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/TripletSumtoZero.scala
+2024.02.14 18:10:13 WARN  Could not find semantic tokens for: file:///C:/Users/abhij/Desktop/Interview_Pattern/scala/TwoPointers/TripletSumtoZero.scala
+Feb 14, 2024 6:10:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3683
+Feb 14, 2024 6:11:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3872
+Feb 14, 2024 6:12:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4003
+Feb 14, 2024 6:12:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4162
+Feb 14, 2024 6:12:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4253
+Feb 14, 2024 6:12:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4260
+Feb 14, 2024 6:13:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4308
+Feb 14, 2024 6:13:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4359
+2024.02.14 18:19:55 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\TripletSumtoZero.scala
+Feb 15, 2024 9:35:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4527
+Feb 15, 2024 9:35:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4627
+2024.02.15 09:36:59 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.5 defined at C:\Users\abhij\.bloop\bloop.json
+2024.02.15 09:36:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\abhij\Desktop\Interview_Pattern\.metals\bsp.trace.json or C:\Users\abhij\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.02.15 09:36:59 INFO  Connected to Build server: Bloop v1.5.15
+2024.02.15 09:36:59 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\TripletSumtoZero.scala
+2024.02.15 09:37:01 INFO  time: indexed workspace in 1.92s
+2024.02.15 09:37:02 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\TripletSumtoZero.scala
+2024.02.15 09:37:12 INFO  no build target found for C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\TripletSumtoZero.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.02.15 09:37:12 INFO  time: code lens generation in 10s
+2024.02.15 10:10:27 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.5 defined at C:\Users\abhij\.bloop\bloop.json
+2024.02.15 10:10:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\abhij\Desktop\Interview_Pattern\.metals\bsp.trace.json or C:\Users\abhij\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.02.15 10:10:27 INFO  Connected to Build server: Bloop v1.5.15
+2024.02.15 10:10:28 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\TripletSumtoZero.scala
+2024.02.15 10:10:27 INFO  time: Imported build in 0.11s
+2024.02.15 10:10:30 INFO  time: indexed workspace in 1.93s
+2024.02.15 10:10:33 INFO  no build target found for C:\Users\abhij\Desktop\Interview_Pattern\scala\TwoPointers\TripletSumtoZero.scala. Using presentation compiler with project's scala-library version: 3.3.1
+Feb 15, 2024 11:29:01 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_11-29-01-383.md
+2024.02.15 11:29:03 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\codesol\PlusMinus.java
+Feb 15, 2024 11:29:04 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_11-29-04-073.md
+2024.02.15 11:29:04 INFO  time: code lens generation in 3.56s
+2024.02.15 11:29:04 INFO  time: code lens generation in 1.81s
+2024.02.15 11:29:04 INFO  time: code lens generation in 4.56s
+Feb 15, 2024 11:29:04 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_11-29-04-966.md
+Feb 15, 2024 11:29:05 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_11-29-05-974.md
+Feb 15, 2024 11:29:08 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_11-29-08-173.md
+2024.02.15 11:29:15 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\codesol\PlusMinus.java
+Feb 15, 2024 11:29:16 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_11-29-16-364.md
+Feb 15, 2024 11:29:17 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_11-29-16-996.md
+Feb 15, 2024 11:29:46 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_11-29-46-466.md
+Feb 15, 2024 11:43:19 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_11-43-19-413.md
+2024.02.15 11:43:42 WARN  Running javac-semanticdb failed for file:///C:/Users/abhij/Desktop/Interview_Pattern/codesol/Triangle.java. Output:
+
+Feb 15, 2024 11:43:43 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_11-43-42-986.md
+2024.02.15 11:43:43 WARN  Running javac-semanticdb failed for file:///C:/Users/abhij/Desktop/Interview_Pattern/codesol/Triangle.java. Output:
+
+Feb 15, 2024 11:43:43 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_11-43-43-578.md
+2024.02.15 11:43:45 WARN  Running javac-semanticdb failed for file:///C:/Users/abhij/Desktop/Interview_Pattern/codesol/Triangle.java. Output:
+
+Feb 15, 2024 11:43:46 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_11-43-45-994.md
+2024.02.15 11:43:46 WARN  Running javac-semanticdb failed for file:///C:/Users/abhij/Desktop/Interview_Pattern/codesol/Triangle.java. Output:
+
+Feb 15, 2024 11:43:46 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_11-43-46-793.md
+2024.02.15 11:43:46 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\codesol\Triangle.java
+Feb 15, 2024 11:43:47 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_11-43-47-278.md
+2024.02.15 18:02:13 WARN  Running javac-semanticdb failed for file:///C:/Users/abhij/Desktop/Interview_Pattern/codesol/MinMax.java. Output:
+
+Feb 15, 2024 6:02:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_18-02-13-725.md

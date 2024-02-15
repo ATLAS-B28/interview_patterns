@@ -1,7 +1,7 @@
 class ListNode(var _x: Int = 0) {
     var next: ListNode = null
 }
-
+//Problem Challenge 2 - Rearrange a LinkedList (medium)
 def reorderList(head: ListNode): Unit = {
     def reverseList(node: ListNode): ListNode = {
         var prev: ListNode = null
