@@ -18,6 +18,10 @@ public class Q2 {
                 i++;
             }
         }
+        //print the nums array
+        for(int num : nums) {
+            System.out.print(num + " ");
+        }
 
         for(i = 0; i < nums.length; i++) {
             if(nums[i] != i + 1) {

@@ -1,0 +1,9 @@
+Yes, you're right. The typical assumption for cyclic 
+sort is that the elements in the array range from 
+1 to n, where n is the size of the array. This means each element
+ represents its correct position in the sorted array.
+
+ In cyclic sort, the "correct position" for an element at index i is indeed where the element with the value of arr[i] should be placed in the sorted array.
+ Therefore, we need to swap the element at index i with the element at its correct position.
+ And if that correct index is already occupied by the element at index i, then we need to keep on swapping until we find an empty index.
+ And if it is at its correct index, then we need to increment i by 1.

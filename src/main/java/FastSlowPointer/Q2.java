@@ -17,26 +17,32 @@ package FastSlowPointer;
 public class Q2 {
 
     public static boolean isHappy(int n) {
+        //here we don't have a traditional linked list but instead
+        //a serires of numbers that are replacement of there previous number
+        //until we encounter 1 or a cycle
         int slow = n;
-        int fast = getNext(n);
+        int fast = getNext(n);//get replacement of the current fast
 
         while(fast != 1 && slow != fast) {
-            slow = getNext(slow);
-            fast = getNext(getNext(fast));
+            slow = getNext(slow);//get replacement of the current slow
+            fast = getNext(getNext(fast));//get replacemnet of the replacement of the current fast
+            //until it reaches 1
         }
-
-        return fast == 1;
+//check whether that's the case is 1
+        return fast == 1;//final condition
     }
 
     public static int getNext(int n) {
         int sum = 0;
-
+//we treat the sum of the constituent digits as next number in list
+//we do so by dividing the number by 10 and adding the remainder's square
         while(n > 0) {
-            int digit = n % 10;
-            sum += digit * digit;
-            n /= 10;
+             int digit = n % 10;
+             //get the digit as the remainder of
+             // the division i.e. the last digit of the number 
+             sum += digit * digit;
+             n /= 10;//remove the last digit of the number
         }
-
         return sum;
     }
 

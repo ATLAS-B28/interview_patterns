@@ -3597,3 +3597,63 @@ SEVERE: A severe compiler error occurred, full details of the error can be found
 
 Feb 15, 2024 6:02:13 PM scala.meta.internal.pc.CompilerAccess handleError
 SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_18-02-13-725.md
+2024.02.15 18:02:14 WARN  Running javac-semanticdb failed for file:///C:/Users/abhij/Desktop/Interview_Pattern/codesol/MinMax.java. Output:
+
+Feb 15, 2024 6:02:14 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_18-02-14-099.md
+Feb 15, 2024 6:02:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\abhij\Desktop\Interview_Pattern\.metals\.reports\metals-full\2024-02-15\r_compiler-error_18-02-18-064.md
+2024.02.15 18:02:18 WARN  Running javac-semanticdb failed for file:///C:/Users/abhij/Desktop/Interview_Pattern/codesol/MinMax.java. Output:
+
+2024.02.15 18:02:24 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.5 defined at C:\Users\abhij\.bloop\bloop.json
+2024.02.15 18:02:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\abhij\Desktop\Interview_Pattern\.metals\bsp.trace.json or C:\Users\abhij\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.02.15 18:02:24 INFO  Connected to Build server: Bloop v1.5.15
+2024.02.15 18:02:25 INFO  time: Imported build in 0.43s
+2024.02.15 18:02:27 INFO  time: indexed workspace in 2.31s
+2024.02.15 18:02:27 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\codesol\MinMax.java
+2024.02.15 18:02:27 WARN  no build target for: C:\Users\abhij\Desktop\Interview_Pattern\codesol\Triangle.java
+2024.02.15 18:02:33 INFO  no build target found for C:\Users\abhij\Desktop\Interview_Pattern\codesol\PlusMinus.java. Using presentation compiler with project's scala-library version: 3.3.1
+2024.02.15 18:03:29 INFO  Shutting down server
+2024.02.15 18:03:29 INFO  shutting down Metals
+2024.02.15 18:03:29 INFO  Shut down connection with build server.
+Feb 15, 2024 6:03:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+INFO: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.nio.channels.ClosedChannelException
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:126)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.sendCancelNotification(RemoteEndpoint.java:180)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint$1.cancel(RemoteEndpoint.java:150)
+	at scala.meta.internal.metals.utils.RequestRegistry.$anonfun$register$5(RequestRegistry.scala:78)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.scala:17)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.metals.utils.RequestRegistry.$anonfun$register$4(RequestRegistry.scala:78)
+	at scala.meta.internal.metals.Cancelable$$anon$1.cancel(Cancelable.scala:18)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:29)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:28)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:25)
+	at scala.meta.internal.metals.utils.RequestRegistry.cancel(RequestRegistry.scala:94)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:396)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:171)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:163)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpenAndConnected(SocketChannelImpl.java:222)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:536)
+	at java.base/sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:124)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:102)
+	at java.base/java.io.OutputStream.write(OutputStream.java:124)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:79)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:139)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:110)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 21 more
+
+2024.02.15 18:03:29 INFO  Failed to run request with params InverseSourcesResult
+2024.02.15 18:03:29 INFO  Exiting server

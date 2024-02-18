@@ -20,12 +20,16 @@ public class Q3 {
             }
         }
 
+        //print the nums array
+        for(int num : nums) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
         for(i = 0; i < nums.length; i++) {
-            if(nums[i] != i + 1) {
-                System.out.println("At " + i + " nums[i] " + nums[i]);
-                System.out.println("Duplicate Number: " + nums[i] + " index");
-                duplicateNums.add(nums[i]);
-            }
+           if(nums[i] != i + 1) {
+               duplicateNums.add(nums[i]);
+           }
         }
 
         return duplicateNums;

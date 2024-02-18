@@ -6,11 +6,13 @@ public class Q1 {
     public static void cyclicSort(int[] nums) {
         int i = 0;
         while(i < nums.length) {
-            int correctIndex = nums[i]  - 1;
+            int correctIndex = nums[i]  - 1;//calculates where current element at i needs to be placed
             System.out.println("At "+i + " correct index: " + correctIndex);
             if(nums[i] != nums[correctIndex]) {
+                //check if it is at the correct index or not
+                //if not then swap
                 swap(nums, i , correctIndex);
-            } else {
+            } else {//else it is at its correct index
                 i++;
             }
         }
