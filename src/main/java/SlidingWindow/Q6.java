@@ -39,7 +39,9 @@ public class Q6 {
 
     public  static  void main(String[] args) {
         String str = "aabccbb";
-        int k = 2;
+        int k = 2;//max. no. of repalcements of characters allowed
+        //to make all the characters the same in the substring, we replace 
+        //at most k characters
         System.out.println("Length of the longest substring: " + findLen(str, k));
     }
 }

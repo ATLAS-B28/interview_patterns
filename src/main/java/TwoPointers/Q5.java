@@ -15,12 +15,14 @@ public class Q5 {
         List<List<Integer>> quadruplets = new ArrayList<>();
 
         for(int i = 0; i < arr.length - 3; i++) {
-            if(i > 0 && arr[i] == arr[i - 1]) {
+            if(i > 0 && arr[i] == arr[i - 1]) {//i > 0 to avoid duplicate and not include i == 0
+                //because we are starting from i = 0 and not i = 1
                 continue;
             }
             System.out.println("i: "+i);
             for(int j = i + 1; j < arr.length - 2; j++) {
-                if(j > i + 1 && arr[j] == arr[j - 1]) {
+                if(j > i + 1 && arr[j] == arr[j - 1]) {///j > i + 1 to avoid duplicate and not include j == i + 1
+                    //because we are starting from j = i + 1 and not j = 0
                     continue;
                 }
 

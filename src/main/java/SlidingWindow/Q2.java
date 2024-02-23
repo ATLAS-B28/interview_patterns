@@ -32,6 +32,8 @@ public class Q2 {
                 }
 
                 start++;
+                System.out.println("After removing the left character: "+charLeft+" the start is: "+start + " and end is: " + end);
+                System.out.println("-----------");
                 //increment the start by 1
             }
             System.out.println("Max len before update: "+maxLen);
@@ -40,8 +42,18 @@ public class Q2 {
             System.out.println("end - start + 1 value: " + value);
             maxLen = Math.max(maxLen, end - start + 1);
             //compare the existing maxLen with the end - start + 1
+            /**
+             * the expression end - start + 1 represents the length of the current 
+             * substring within the window. The end and start pointers mark the 
+             * boundaries of the substring, and adding 1 accounts for the inclusive 
+             * nature of the substring length calculation,, the addition of 1 to the start 
+             * index accounts for the zero-based indexing in the array. 
+             * This adjustment ensures that the start index aligns with the next 
+             * character in the substring as the window slides to the right.
+             */
 
             System.out.println("At the "+end+" maxLen is "+maxLen);
+            System.out.println("------------------------------------");
         }
 
         return maxLen;
@@ -49,7 +61,10 @@ public class Q2 {
 
     public  static void main(String[] args) {
         String str = "araaci";
-        int k = 2;
+        int k = 2;//max no. of distinct characters in a window at a time 
+        //if it exceeds we reduce the element whose frequency is subtracted at each iteration
+        //until it goes to zero and meanwhile we the maxlen maintains the last max length of the
+        //of the substring with k distinct elements and changes when end - start + 1 is greater then present maxlen
         System.out.println("Longest Substring with K Distinct Characters: "+findLongestSubstring(str, k));
     }
 }

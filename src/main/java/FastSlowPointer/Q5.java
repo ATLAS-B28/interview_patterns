@@ -56,9 +56,9 @@ public class Q5 {
             return;
         }
 
-        ListNode4 mid = findMiddle(head);
-        ListNode4 secondHalfReversed = reverseList(mid.next);
-        mid.next = null;
+        ListNode4 middle = findMiddle(head);
+        ListNode4 secondHalfReversed = reverseList(middle.next);
+        middle.next = null;
 
         mergeLists(head, secondHalfReversed);
     }

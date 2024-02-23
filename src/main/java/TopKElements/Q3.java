@@ -13,16 +13,22 @@ public class Q3 {
 
     public static int[][] kClosest(int[][] points, int K) {
         PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> distFromOrigin(b) - distFromOrigin(a));
-
+        //comparator (a, b) -> distFromOrigin(b) - distFromOrigin(a) creates a 
+        //max heap based on the distance of points a and b from the origin.
         for(int[] point : points) {
             System.out.println(Arrays.toString(point));
             pq.offer(point);//we put the points in the priority queue
             //from largest to smallest
             System.out.println("pq = "+Arrays.toString(pq.peek()));
+            /**
+             * those with large values of distance from origin are polled when 
+             * size of heap is exceeding K as we want only K closest so any size 
+             * greater then K must have values with largest distances
+             */
             if(pq.size() > K) {
                 //if he size is greater than K which is k the closest points
                 System.out.println("pq.size() = "+pq.size());
-                pq.poll();//remove the smallest element
+                pq.poll();//remove the points with largest distances
                 System.out.println("pq = "+ Arrays.toString(pq.peek()));
             }
         }

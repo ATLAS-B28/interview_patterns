@@ -13,8 +13,8 @@ public class Q6 {
         //using method that returns a comparator that imposes 
         //the reverse of natural ordering on a collection
         //of objects that implements the Comparable interface
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
-
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+       
         for(int num : arr) {
             System.out.println("numth iteration: " + num);
             pq.add(num);

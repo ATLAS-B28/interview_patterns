@@ -35,16 +35,17 @@ public class Q5 {
             if(end - start + 1 >= s1.length()) {
                 //this if statement means that we have a window of
                 //sufficient size to contain a permutation of s1
-                if(Arrays.equals(windowFreq, s1Freq)) {
+                if(Arrays.equals(s1Freq,windowFreq)) {
                     return true;
                 }
 
+                //now moving the window
                 char left = s2.charAt(start);//represents the character leaving the window
                 System.out.println("left = "+left);
                 windowFreq[left - 'a']--;//update after the left leaves of the window
                 System.out.println("windowFreq[left - 'a'] = "+windowFreq[left - 'a']);
                 System.out.println("windowFreq: "+ Arrays.toString(windowFreq));
-                start++;
+                start++;//update the start
             }
 
             end++;

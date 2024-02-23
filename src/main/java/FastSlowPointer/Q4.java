@@ -26,6 +26,7 @@ public class Q4 {
             fast = fast.next.next;
         }
 
+        System.out.println(slow.val);
         return slow;
     }
 
@@ -39,6 +40,8 @@ public class Q4 {
             prev = curr;
             curr = next;
         }
+        System.out.println(prev.val);
+        System.out.println(prev.next.val);
 
         return prev;
     }
