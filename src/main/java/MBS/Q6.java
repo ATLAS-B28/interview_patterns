@@ -31,7 +31,7 @@ public class Q6 {
             System.out.println("end: "+end+" start: "+start);
             int newStart = end + 1;
             System.out.println("newStart: "+newStart);
-            end = end + (end - start + 1) * 2;
+            end = end + (end - start + 1) * 2 ;
             System.out.println("end: "+end);
             start = newStart;
         }

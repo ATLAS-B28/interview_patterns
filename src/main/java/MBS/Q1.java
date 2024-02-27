@@ -80,7 +80,7 @@ public class Q1 {
 
     public static void main(String[] args) {
         int[] arr= {3, 5, 7, 9, 1, 90, 100, 130, 140, 160};//{2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
-        int target = 10;
+        int target = 1;
         int result = orderAgnosticBinarySearch(arr, target);
         System.out.println("Element found at index: " + result);
     }

@@ -29,12 +29,15 @@ public class Q3 {
         }
 
         System.out.println(chars.length+" & "+start+" then "+chars[start % chars.length]+" where "+(start % chars.length));
+        if(start >= chars.length) {
+            System.out.println("No next letter");
+        }
         return chars[start % chars.length];
     }
 
     public static void main(String[] args) {
         char[] chars = {'b','c', 'f', 'h'} ;//{'a', 'c', 'f', 'h'};
-        char target = 'b';
+        char target = 'g';
         char result = findNextLetter(chars, target);
         System.out.println("Next letter of " + target + " is: " + result);
     }
