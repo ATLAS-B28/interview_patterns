@@ -11,7 +11,6 @@ public class Q1 {
 
         for (int i = 0; i < k; i++) {
             //add the first k elements to the min heap
-            System.out.println("When we first add to queue "+nums[i]);
             minHeap.offer(nums[i]);
         }
 
